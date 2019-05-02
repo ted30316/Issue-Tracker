@@ -16,7 +16,7 @@
 
 <body onload="fetchIssues()">
     <div class="container">
-        <h1>QA Enviornment Issue Tracker <small>by GA JS-226</small></h1>
+        <h1>QA Enviornment Issue Tracker</h1>
         <div class="jumbotron">
             <h3>Add New Issue:</h3>
             <form id="issueInputForm">
@@ -33,11 +33,31 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="issueDescInput">Assigned To</label>
-                    <input type="text" class="form-control" id="issueAssignedToInput"
-                        placeholder="Enter responsible ...">
+                    <label for="issueDescInput">Assigned Scrum Team</label>
+                    <select class="form-control" id="issueAssignedToInput">
+                        <option value="Mobile">Mobile</option>
+                        <option value="HAL">HAL</option>
+                        <option value="Engineering Infrastructure">Engineering Infrastructure</option>
+                        <option value="Bolder Dash">Bolder Dash</option>
+                        <option value="RnB">RnB</option>
+                        <option value="Regionalization">Regionalization</option>
+                        <option value="PED">PED</option>
+                        <option value="Cores Light">Cores Light</option>
+                        <option value="Cloud9erz">Cloud9erz</option>
+                        <option value="License To Trill">License To Trill</option>
+                        <option value="MNW">MNW</option>
+                        <option value="Support Eng">Support Eng</option>
+                        <option value="CCR">CCR</option>
+                        <option value="Data Mob">Data Mob</option>
+                        <option value="OCD">OCD</option>
+                        <option value="UFO">UFO</option>
+                        <option value="UX">UX</option>
+                        <option value="HSA">HSA</option>
+                        <option value="LFE">LFE</option>
+                        <option value="Unassigned">Unassigned</option>
+                    </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Add</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
         <div class="row">
