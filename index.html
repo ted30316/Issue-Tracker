@@ -18,8 +18,12 @@
     <div class="container">
         <h1>QA Enviornment Issue Tracker</h1>
         <div class="jumbotron">
-            <h3>Add New Issue:</h3>
+            <h3>Create New Issue</h3>
             <form id="issueInputForm">
+                <div class="form-group">
+                    <label for="issueDescInput">Summary</label>
+                    <input type="text" class="form-control" id="issueSummaryInput">
+                </div>
                 <div class="form-group">
                     <label for="issueDescInput">Description</label>
                     <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ...">
@@ -35,7 +39,7 @@
                 <div class="form-group">
                     <label for="issueDescInput">Assigned Scrum Team</label>
                     <select class="form-control" id="issueAssignedToInput">
-                        <option value="Mobile">Mobile</option>
+                        <option value="Unassigned">Unassigned</option>
                         <option value="HAL">HAL</option>
                         <option value="Engineering Infrastructure">Engineering Infrastructure</option>
                         <option value="Bolder Dash">Bolder Dash</option>
@@ -54,7 +58,7 @@
                         <option value="UX">UX</option>
                         <option value="HSA">HSA</option>
                         <option value="LFE">LFE</option>
-                        <option value="Unassigned">Unassigned</option>
+                        <option value="Mobile">Mobile</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
